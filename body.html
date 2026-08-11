@@ -1,4 +1,4 @@
-<!-- v7 -->
+<!-- v8 -->
 
 <!-- 修正部分区域的透明 -->
 <style>
@@ -9,7 +9,7 @@
 </style>
 
 <script type="module">
-    // v7
+    // v8
 
     // 提供用来监听代码控制的 url 变化的事件
     (() => {
@@ -39,17 +39,16 @@
             * 
          */
         static ignoredSelectors = [
-        '.hope-tooltip', // 提示小标签及其装饰
-        '.hope-tooltip__arrow',
-        '.hope-checkbox__control',// 复选框
-        '.hope-modal__overlay', // 模态框遮罩 
-        '.hope-drawer__overlay', // 抽屉遮罩
-        '.hope-select__option', // 下拉选项
-        '.monaco-editor, .monaco-editor *', // 代码编辑器
-        '.art-video-player, .art-video-player *', // 视频播放器
-        'button:not(.hope-menu__trigger)', // 除目录外按钮
-        'svg' // SVG 图标
-    ];
+            '.hope-tooltip', // 提示小标签及其装饰
+            '.hope-tooltip__arrow',
+            '.hope-checkbox__control',// 复选框
+            '.hope-modal__overlay', // 模态框遮罩 
+            '.hope-drawer__overlay', // 抽屉遮罩
+            '.hope-select__option', // 下拉选项
+            '.art-video-player, .art-video-player *', // 视频播放器
+            'button:not(.hope-menu__trigger)', // 除目录外按钮
+            'svg' // SVG 图标
+        ];
 
         static getSelector(mainSelector) {
             return `${mainSelector} :not(${Beautifier.ignoredSelectors.join('):not(')})`;
