@@ -2,9 +2,9 @@
 
 这是一个alist/openlist美化代码存储库，但特别的是，它提供了一种与传统美化代码不同的、全新的实现原理。
 
-事实上，它并非是按照以往的做法，对alist/openlist的前端元素进行枚举修改，而是加载了一个动态的美化监视器，自动地对带有背景色的元素进行替换颜色，从而在alist/openlist前端功能更新时有更好的适应性。
+它并非是按照以往的做法，对alist/openlist的前端元素进行枚举修改，而是加载了一个动态的监视器，自动地对带有背景色的元素进行替换颜色，从而在alist/openlist前端功能更新时有更好的适应性。
 
-可以在[我的文章](https://blog.mmoe.work/alist-js-beautification/)查看相关介绍。
+可以在[我的博客](https://blog.mmoe.work/alist-js-beautification/)查看相关介绍。
 
 ## 组件
 
